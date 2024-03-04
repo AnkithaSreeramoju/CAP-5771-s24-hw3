@@ -64,8 +64,6 @@ def question1():
     return answers
 
 
-
-
 # -----------------------------------------------------------
 def question2():
     answers = {}
@@ -74,25 +72,21 @@ def question2():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "The k-means method will probably place each centroid in the middle of each shaded circle by the conclusion of its execution given the uniform density of the shaded regions and the beginning centroids indicated by the X sign. This is because the centroids will move to the mean of the points inside their clusters.
-"
+    answers["(a) explain"] = "The k-means method will probably place each centroid in the middle of each shaded circle by the conclusion of its execution given the uniform density of the shaded regions and the beginning centroids indicated by the X sign. This is because the centroids will move to the mean of the points inside their clusters."
 
     # type: bool (True/False)
     answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Every shaded area in Figure B is distinct and contains an initial centroid. Assuming there is no overlap between the regions and the method performs as predicted with such discrete beginning placements, the k-means algorithm should converge with one centroid in the middle of each shaded region, with each cluster having just points from its respective region.
-"
+    answers["(b) explain"] = "Every shaded area in Figure (b) is distinct and contains an initial centroid. Assuming there is no overlap between the regions and the method performs as predicted with such discrete beginning placements, the k-means algorithm should converge with one centroid in the middle of each shaded region, with each cluster having just points from its respective region."
 
     # type: bool (True/False)
     answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "In the case of Figure (c), it is improbable that the final clustering will contain an empty cluster given the initial centroids and the data points indicated by the red dots. Every data point in the k-means algorithm is paired with the closest centroid; because the centroids are positioned close to the points, each will probably draw in neighboring points, preventing any cluster from becoming empty after convergence.
-"
+    answers["(c) explain"] = "In the case of Figure (c), it is improbable that the final clustering will contain an empty cluster given the initial centroids and the data points indicated by the red dots. Every data point in the k-means algorithm is paired with the closest centroid; because the centroids are positioned close to the points, each will probably draw in neighboring points, preventing any cluster from becoming empty after convergence."
 
     return answers
-
 
 
 
@@ -152,11 +146,7 @@ def question4():
     answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "The single centroid from Circle A is likely to be shared with Circle B due to their closeness, leaving Circle A with no centroids, Circle B with one, and Circle C with its two initial centroids due to its large number of points.
-
-
-
-"
+    answers["(c) explain"] = "The single centroid from Circle A is likely to be shared with Circle B due to their closeness, leaving Circle A with no centroids, Circle B with one, and Circle C with its two initial centroids due to its large number of points."
 
     return answers
 
@@ -177,10 +167,7 @@ def question5():
     answers["(b)"] = {"Group A" , "Group C"}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = " Groups A and C would be considered for merging because the complete link technique considers the farthest pair of points for merging, and the farthest points of Groups A and C are closer than those of Groups A and B.
-
-
-"
+    answers["(b) explain"] = " Groups A and C would be considered for merging because the complete link technique considers the farthest pair of points for merging, and the farthest points of Groups A and C are closer than those of Groups A and B."
 
     return answers
 
@@ -238,6 +225,7 @@ def question6():
 
 
 
+
 # -----------------------------------------------------------
 def question7():
     answers = {}
@@ -255,7 +243,6 @@ def question7():
     answers["(b) explain"] = " The cluster with the smallest clustering entropy would be the one with the least uniform distribution of categories, meaning most of the data points in the cluster belong to one category. Cluster 1 is predominantly water with 9000 out of 10000 points being water, indicating a very well-defined grouping and thus the smallest clustering entropy."
 
     return answers
-
 
 
 
@@ -323,29 +310,27 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = [Hierarchical, Overlapping, Partial ]
+    answers["(a)"] = ["Hierarchical", "Overlapping"," Partial" ]
 
     # type: list
-    answers["(b)"] = [Partitional, Exclusive, Complete]
+    answers["(b)"] = ["Partitional", "Exclusive", "Complete"]
     # type: explanatory string (at least four words)
     answers["(b) explain"] = "Students are assigned to distinct job categories without overlap (e.g., TA, RA, other on-campus jobs, jobless), fitting partitional and exclusive clustering. The requirement that assignments sum to 20 hours necessitates a complete categorization of all students."
 
     # type: list
-    answers["(c)"] = [Partitional, Exclusive, Complete]
+    answers["(c)"] = ["Partitional", "Exclusive", "Complete"]
     
     # type: list
-    answers["(d)"] = [Hierarchical, Overlapping, Partial ]
+    answers["(d)"] = ['Hierarchical", "Overlapping", "Partial ']
     
     # type: list
-    answers["(e)"] = [Partitional, Exclusive, Complete]
+    answers["(e)"] = ["Partitional", "Exclusive","Complete"]
     # type: explanatory string (at least four words)
     answers["(e) explain"] = "Grading inherently divides students into distinct, non-overlapping categories (e.g., letter grades), fitting partitional and exclusive clustering. All students receive a grade, necessitating a complete clustering approach."
 
    
 
     return answers
-
-
 
 
 # -----------------------------------------------------------
